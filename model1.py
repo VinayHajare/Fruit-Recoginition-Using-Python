@@ -27,7 +27,7 @@ data_transforms = transforms.Compose([
 ])
 
 # load the fruit image dataset
-dataset = torchvision.datasets.ImageFolder(root='C:\\Users\\Student\\Documents\\Python Programming 2006043\\FruitImageDataset', transform=data_transforms)
+dataset = torchvision.datasets.ImageFolder(root='path\\to\\FruitImageDataset', transform=data_transforms)
 train_dataset, test_dataset = split_dataset(dataset)
 
 # use DataLoader to load the data in batches
